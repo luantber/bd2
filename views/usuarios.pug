@@ -1,0 +1,10 @@
+h2 Crea un Usuario
+form(action="/usuario" method="post")
+	input(type="text" name="nombre")
+	input(type="text" name="apellido")
+	input(type="submit")
+
+div
+	ul
+	each user in usuarios
+		li= JSON.stringify(user)
